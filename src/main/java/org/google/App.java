@@ -12,7 +12,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        File f = new File("demo.txt");
+//        File f = new File("demo.txt");
 //        try {
 //
 //            if(f.createNewFile()){
@@ -24,7 +24,7 @@ public class App
 //        } catch (IOException e) {
 //            throw new RuntimeException(e);
 //        }
-
+//
 //        try {
 //            FileWriter fw = new FileWriter("demo.txt");
 //            fw.write("hello hi how are you");
@@ -35,8 +35,19 @@ public class App
 //            System.out.println("Error has occurred");
 //            e.printStackTrace();
 //        }
-        
-//        try (FileReader fr = new FileReader("data.txt")) {
+//
+//        try {
+//            FileWriter fw = new FileWriter("demo.txt", true);
+//            fw.write("al alaakalkaaka ");
+//            System.out.println("Successfully wrote the text in file");
+//            fw.close();
+//        }
+//        catch (IOException e) {
+//            System.out.println("Error has occurred");
+//            e.printStackTrace();
+//        }
+//
+//        try (FileReader fr = new FileReader("demo.txt")) {
 //            char[] buffer = new char[100];
 //            int charsRead;
 //            while ((charsRead = fr.read(buffer)) != -1) {
@@ -45,6 +56,7 @@ public class App
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
+
         
 //        try (FileReader fr = new FileReader("demo.txt")) {
 //            char[] buffer = new char[100];
@@ -56,16 +68,32 @@ public class App
 //            e.printStackTrace();
 //        }
 
-        try(FileReader fr = new FileReader("demo.txt")){
-            BufferedReader br = new BufferedReader(fr);
-            br.mark(7);
-            String s;
-            while((s = br.readLine()) != null){
-                System.out.println(s);
-            }
-        }
-        catch (IOException e){
-            e.printStackTrace();
-        }
+//        try(FileReader fr = new FileReader("demo.txt")){
+//            BufferedReader br = new BufferedReader(fr);
+//            br.mark(7);
+//            String s;
+//            while((s = br.readLine()) != null){
+//                System.out.println(s);
+//            }
+//        }
+//        catch (IOException e){
+//            e.printStackTrace();
+//        }
+
+//        try{
+//            Scanner sc = new Scanner(System.in);
+//            String fileName = sc.nextLine();
+//
+//            File file = new File( fileName);
+//            if(file.createNewFile()){
+//                System.out.println("New file has been created");
+//            }
+//            System.out.println("file path : " + file.getAbsolutePath());
+//        }
+//        catch(IOException e){
+//            System.out.println(e.getMessage());
+//        }
+
+        
     }
 }
